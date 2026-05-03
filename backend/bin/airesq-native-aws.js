@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const cdk = require("aws-cdk-lib");
+const airesq_native_aws_stack_1 = require("../lib/airesq-native-aws-stack");
+const app = new cdk.App();
+new airesq_native_aws_stack_1.AiresqNativeAwsStack(app, 'AiresqNativeAwsStack', {
+    env: {
+        account: process.env.CDK_DEFAULT_ACCOUNT,
+        region: process.env.CDK_DEFAULT_REGION || 'ap-south-1'
+    }
+});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYWlyZXNxLW5hdGl2ZS1hd3MuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJhaXJlc3EtbmF0aXZlLWF3cy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFDQSxtQ0FBbUM7QUFDbkMsNEVBQXNFO0FBRXRFLE1BQU0sR0FBRyxHQUFHLElBQUksR0FBRyxDQUFDLEdBQUcsRUFBRSxDQUFDO0FBRTFCLElBQUksOENBQW9CLENBQUMsR0FBRyxFQUFFLHNCQUFzQixFQUFFO0lBQ3BELEdBQUcsRUFBRTtRQUNILE9BQU8sRUFBRSxPQUFPLENBQUMsR0FBRyxDQUFDLG1CQUFtQjtRQUN4QyxNQUFNLEVBQUUsT0FBTyxDQUFDLEdBQUcsQ0FBQyxrQkFBa0IsSUFBSSxZQUFZO0tBQ3ZEO0NBQ0YsQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiIyEvdXNyL2Jpbi9lbnYgbm9kZVxuaW1wb3J0ICogYXMgY2RrIGZyb20gJ2F3cy1jZGstbGliJztcbmltcG9ydCB7IEFpcmVzcU5hdGl2ZUF3c1N0YWNrIH0gZnJvbSAnLi4vbGliL2FpcmVzcS1uYXRpdmUtYXdzLXN0YWNrJztcblxuY29uc3QgYXBwID0gbmV3IGNkay5BcHAoKTtcblxubmV3IEFpcmVzcU5hdGl2ZUF3c1N0YWNrKGFwcCwgJ0FpcmVzcU5hdGl2ZUF3c1N0YWNrJywge1xuICBlbnY6IHtcbiAgICBhY2NvdW50OiBwcm9jZXNzLmVudi5DREtfREVGQVVMVF9BQ0NPVU5ULFxuICAgIHJlZ2lvbjogcHJvY2Vzcy5lbnYuQ0RLX0RFRkFVTFRfUkVHSU9OIHx8ICdhcC1zb3V0aC0xJ1xuICB9XG59KTtcbiJdfQ==

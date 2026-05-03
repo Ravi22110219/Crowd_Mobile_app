@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "AIResQ Flood",
+    "slug": "airesq-flood",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/airesq_dark.png",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "AIResQ uses the camera to capture flood evidence photos.",
+        "NSPhotoLibraryUsageDescription": "AIResQ uses your library to attach flood evidence photos.",
+        "NSLocationWhenInUseUsageDescription": "AIResQ uses location to place flood reports on the live map."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/airesq_dark.png",
+        "backgroundColor": "#F0F8FB"
+      },
+      "permissions": ["CAMERA", "ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION", "READ_MEDIA_IMAGES"]
+    }
+  }
+}
