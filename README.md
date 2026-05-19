@@ -74,8 +74,10 @@ The mobile app is intentionally componentized so another React Native app can im
 
 - `src/screens/ReportScreen.js`
 - `src/screens/LiveMapScreen.js`
-- `src/screens/AdminDashboardScreen.js`
+- `src/screens/AdminScreen.js`
 - `src/api/airesqApi.js`
 - `src/components/*`
 
 Set the API endpoints in `src/config/awsConfig.js` or `.env`.
+
+For the full two-app integration contract, shared auth guidance, API list, request/response examples, and recommended folder structure, see [`docs/FRONTEND_API_INTEGRATION.md`](docs/FRONTEND_API_INTEGRATION.md).
